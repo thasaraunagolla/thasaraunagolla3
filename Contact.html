@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="with=device-width,initial-scale=1.0">
+<title>University Website Design-Easy Tutorials</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	
+<link rel="stylesheets" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+		<nav>
+		<a href="index.php"><img src="eduford_img/Logo3.png" alt=""></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa-light fa-xmark" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href="index.php">HOME</a></li>
+			<li><a href="About.html">ABOUT</a></li>
+			<li><a href="Courses.html">COURSES</a></li>
+			<li><a href="Blog.html">BLOG</a></li>
+			<li><a href="Contact.html">CONTACT</a></li>
+			<li><button class="btnLogin-popup">Sign In</button></li> 
+			<li><button class="btnLogin-popup">Sign Up</button></li> 
+		</ul>
+		</div>
+		<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Contact Us</h1>
+</section>
+	
+<!-----Contact Us------>
+<section class="location">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582117.683645044!2d-15.01291801618459!3d54.102392749083535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e0!3m2!1sen!2suk!4v1705614297570!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+	
+<section class="contact-us">
+	<div class="row">
+		<div class="contact-col">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h5>Britannia Academy,123 Scholar Lane,</h5>
+					<p>Edenville,ED1 4UC,England,UK.</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<span>
+					<h5>01234 567890</h5>
+					<p>Monday to Saturday,10AM to 6PM</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-envelope-o"></i>
+				<span>
+					<h5>info@britanniaacademy.ac.uk</h5>
+					<p>Email us your query</p>
+				</span>
+			</div>
+		</div>
+		<div class="contact-col">
+			<form action="form-handler.php" method="post">
+				<input type="text" name="name" placeholder="Enter your name" required>
+				<input type="text" name="email" placeholder="Enter your email address" required>
+				<input type="text" name="subject" placeholder="Enter your subject" required>
+				<textarea rows="8" name="message" placeholder="Message" required></textarea>
+				<button type="submit" class="hero-btn red-btn">Send Message</button>
+			</form>
+			
+		</div>
+	</div>
+	
+</section>
+<!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+	<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  </p>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2024- Britannia❤️Academy <strong>&nbsp;</strong></div>
+	
+<!------Javascript for the Toggle Menu------>
+<script>
+		var navLinks=documents.getElementByID("navLinks");
+		function showMenu(){
+			navLinks.style.right="0";
+		}
+		function hideMenu(){
+			navLinks.style.right="-200px";
+		}
+</script>
+</body>
+</html>

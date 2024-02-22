@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="with=device-width,initial-scale=1.0">
+<title>About</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	
+<link rel="stylesheets" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+		<a href="index.php"><img src="eduford_img/logo3.png" alt=""></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa-light fa-xmark" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href="index.php">HOME</a></li>
+			<li><a href="About.html">ABOUT</a></li>
+			<li><a href="Courses.html">COURSE</a></li>
+			<li><a href="Blog.html">BLOG</a></li>
+			<li><a href="Contact.html">CONTACT</a></li>	
+			<li><button class="btnLogin-popup">Sign In</button></li> 
+			<li><button class="btnLogin-popup">Sign Up</button></li> 
+		</ul>
+		</div>
+		<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>About Us</h1>
+	</section>
+	
+	<!-----About Us Content----->
+	<section class="about-us">
+		<div class="row">
+			<div class="about-col">
+				<h1>Britannia Academy is not just an educational institute</h1>
+				<p>Britannia Academy is a sanctuary for aspiring minds.Our commitment to academic excellence is matched only by our dedication to nurturing well-rounded individuals equipped for the challenges of tomorrow.Situation in a vibrant community,our institute is a melting pot of ideas,diversity,and limitless possibilities.</p>
+				<h2>Our Mission</h2>
+				<p>Britannia Academy is committed to empowering individuals to think critically,communicate effectively,and contribute meaningfully to society.We aim to instil a love for lifelong learning,fostering an environment where every student becomes a catalyst for positive change.</p>
+				<a href="" class="hero-btn red-btn">Explore Now</a>
+			</div>
+			<div class="about-col">
+				<img src="../GreatStack/eduford_img/about.jpg">
+			</div>
+		</div>
+	
+	</section>
+<!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+	<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  </p>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2024- Britannia❤️Academy <strong>&nbsp;</strong></div>
+	
+	<!------Javascript for the Toggle Menu------>
+	<script>
+		var navLinks=documents.getElementByID("navLinks");
+		function showMenu(){
+			navLinks.style.right="0";
+		}
+		function hideMenu(){
+			navLinks.style.right="-200px";
+		}
+	</script>
+</body>
+</html>

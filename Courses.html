@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="with=device-width,initial-scale=1.0">
+<title>University Website Design-Easy Tutorials</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	
+<link rel="stylesheets" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+		<a href="index.php"><img src="eduford_img/Logo3.png" alt=""></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa-light fa-xmark" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href="index.php">HOME</a></li>
+			<li><a href="About.html">ABOUT</a></li>
+			<li><a href="Courses.html">COURSES</a></li>
+			<li><a href="Blog.html">BLOG</a></li>
+			<li><a href="Contact.html">CONTACT</a></li>		
+			<li><button class="btnLogin-popup">Sign In</button></li> 
+			<li><button class="btnLogin-popup">Sign Up</button></li> 
+		</ul>
+		</div>
+		<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Our Courses</h1>
+	</section>
+	
+	<!-----Course----->
+	<section class="course">
+		<h1>Courses We Offer</h1>
+		<p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+		
+		<div class="row">
+			<div class="course-col">
+				<h3>Intermediate</h3>
+				<p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.Pellentesque aliquest turpis nulla,eleifend faucibus est sollicitudin ut.Maecenas ut venenatis ex,et dapibus purus Done sit.</p>
+			</div>
+			<div class="course-col">
+				<h3>Degree</h3>
+				<p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.Pellentesque aliquest turpis nulla,eleifend faucibus est sollicitudin ut.Maecenas ut venenatis ex,et dapibus purus Done sit.</p>
+			</div>
+			<div class="course-col">
+				<h3>Post Graduation</h3>
+				<p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.Pellentesque aliquest turpis nulla,eleifend faucibus est sollicitudin ut.Maecenas ut venenatis ex,et dapibus purus Done sit.</p>
+			</div>
+		</div>
+	</section>
+	<!-----Facilities----->
+<section class="facilities">
+		<h1>Our Key Features & Facilities</h1>
+		<p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+		
+		<div class="row">
+			<div class="facilities-col">
+				<img src="../GreatStack/eduford_img/learning spaces.jpeg" alt="Learning Spaces">
+				<h3>Innovative Learning Spaces</h3>
+				<p>Wisdom Academy boasts state of the art classrooms,laboratories and collaborative spaces designed to encourage interactive and experiential learning.Our commitment to providing a stimulating environment sets the stage for students to explore,discover,and excel.</p>
+			</div>
+			<div class="facilities-col">
+				<img src="eduford_img/basketball.png" alt="Library">
+				<h3>Cutting-edge Academics</h3>
+				<p>Our curriculum is meticulously crafted to inspire intellectual curiosity and foster a deep understanding of various subjects.We embrace modern pedagogical methods,ensuring that our students are equipped with the skills necessary for success in an ever-evolving world.
+</p>
+			</div>
+			<div class="facilities-col">
+				<img src="eduford_img/cafeteria.png" alt="Library">
+				<h3>Dynamic Faculty</h3>
+				<p>Our esteemed faculty members are more than educators;they are mentors,guiding students on their educational journey.With a blend of academic expertise and real-world experience,our faculty is dedicated to shaping future leaders and visionaries.</p>
+			</div>
+			<div class="facilities-col">
+				<img src="eduford_img/cafeteria.png" alt="Library">
+				<h3>Holistic Development</h3>
+				<p>Beyond academics,Wisdom Academy emphasises the holistic development of students.We offer a spectrum of extracurricular activities,including arts,sports and community engagement ensuring that every student discovers their unique talents and passions.</p>
+			</div>
+		</div>	
+	</section>
+<!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+	<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  </p>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2024- Britannia❤️Academy <strong>&nbsp;</strong></div>
+	<!------Javascript for the Toggle Menu------>
+	<script>
+		var navLinks=documents.getElementByID("navLinks");
+		function showMenu(){
+			navLinks.style.right="0";
+		}
+		function hideMenu(){
+			navLinks.style.right="-200px";
+		}
+	</script>
+</body>
+</html>
